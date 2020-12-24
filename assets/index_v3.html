@@ -11,31 +11,118 @@
     }
     .box {
       margin-top: 1em;
+	  width: 500px;
+	  border: 1px lightgray solid;
+	  border-radius: 2px;
     }
     #txtURL {
-      width: 100%;
+      width: 80%;
       height: 2em;
       text-indent: 0.5em;
       padding: 0.25em 0;
+	  border: none;
     }
     #btnGo {
-      width: 100%;
-      font-size: 1.5em;
+      width: 19%;
+		font-size: 1em;
+		border: none;
+		height: 35px;
     }
+	#list {
+		position: absolute;
+		bottom: 20px;
+	}
     #list a {
       margin: 1em;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <input id="txtURL" type="text" value="www.google.com" autofocus>
-  </div>
-  <div class="box">
-    <button id="btnGo">Go</button>
-  </div>
-  <div class="box" id="list">
-  </div>
+<center>
+        <div jscontroller="cvn5cb" data-responsive-height-resize="536" data-responsive-min-height="100"
+            data-responsive-min-width="400" id="lga" jsaction="rcuQ6b:npT2md">
+            <style>
+                .hp #searchform {
+                    transition: top 0.4s ease, transform 0.4s ease
+                }
+
+                #lga {
+                    transition: margin-top 0.4s ease, height 0.4s ease
+                }
+
+                div#lga img#hplogo {
+                    transition: padding-top 0.4s ease, width 0.4s ease, height 0.4s ease;
+                    width: auto
+                }
+
+                div#lga div#hplogo {
+                    max-width: 100%;
+                    line-height: 233px;
+                    transition: height 0.4s ease, transform 0.4s ease, width 0.4s ease
+                }
+
+                div#hplogo a img {
+                    max-width: 100%;
+                    height: auto;
+                    vertical-align: bottom
+                }
+
+                @media only screen and (max-height:536px) {
+                    .hp #searchform {
+                        transform: translateY(-129px)
+                    }
+
+                    .hp #lga {
+                        height: 100px
+                    }
+
+                    div#lga img#hplogo {
+                        padding-top: 10px !important;
+                        height: 72px;
+                        width: auto
+                    }
+
+                    div#hplogo {
+                        transform: scale(.5) translateY(-120px);
+                        width: 400px !important
+                    }
+
+                    .fOwUFe {
+                        right: -15px;
+                        top: unset !important;
+                        left: unset !important;
+                        bottom: 20px;
+                        transform: scale(1.53)
+                    }
+                }
+            </style>
+            <style>
+                #lga {
+                    height: 233px;
+                    margin-top: 89px
+                }
+
+                @media only screen and (max-height:768px) {
+                    #lga {
+                        margin-top: 47px
+                    }
+                }
+            </style>
+            <div style="display:inline-block;position:relative;height:180px;width:500px;line-height:180px" id="hplogo">
+                <a
+                    href="/search?q=google"><img
+                        alt="December Holidays" border="0" height="180"
+                        src="https://www.google.com/logos/doodles/2020/december-holidays-days-2-30-6753651837108830.3-law.gif"
+                        style="padding-top:21px" title="December Holidays" width="500"></a>
+            </div>
+        </div>
+		  <div class="box">
+			<input id="txtURL" type="text" value="www.google.com" autofocus>
+			<button id="btnGo">Go</button>
+		  </div>
+		  <div class="box" id="list">
+		  </div>
+    </center>
   <script>
     const PAGE_CONF_SET = 110
     const PAGE_CONF_GET = 111
