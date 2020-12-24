@@ -12,6 +12,7 @@
     .box {
       margin-top: 1em;
 	  width: 500px;
+	  max-width: 100%;
 	  border: 1px lightgray solid;
 	  border-radius: 2px;
     }
@@ -21,6 +22,7 @@
       text-indent: 0.5em;
       padding: 0.25em 0;
 	  border: none;
+	  outline: none;
     }
     #btnGo {
       width: 19%;
@@ -120,7 +122,7 @@
 			<input id="txtURL" type="text" value="www.google.com" autofocus>
 			<button id="btnGo">Go</button>
 		  </div>
-		  <div class="box" id="list">
+		  <div id="list">
 		  </div>
     </center>
   <script>
@@ -188,7 +190,7 @@
         url = url || `www.${id}.com/`
         return `\
 <a rel="noopener noreferrer" href=./-----https://${url}>\
-<img width=128 height=128 src=__sys__/assets/ico/${id}.png></a>`
+<img width=36 height=36 src=__sys__/assets/ico/${id}.png></a>`
       }).join('')
     }
   </script>
